@@ -1,0 +1,432 @@
+ex 1
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exe1Lista2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double v1;
+            double v2;
+
+            Console.Write("Digite o Primeiro Valor: ");
+            v1 = Double.Parse(Console.ReadLine());
+            Console.Write("Digite o Primeiro Valor: ");
+            v2 = Double.Parse(Console.ReadLine());
+
+            if (v1 == v2)
+                Console.WriteLine("O Primeiro Valor é maior: ");
+            else
+                Console.WriteLine("O Segundo Valor é maior: ");
+        }
+    }
+}
+
+ex 2
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exe2Lista2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double v1;
+            double v2;
+
+            Console.Write("Digite o Primeiro Valor: ");
+            v1 = Double.Parse(Console.ReadLine());
+
+            Console.Write("Digite o Segundo Valor: ");
+            v2 = Double.Parse(Console.ReadLine());
+
+            if (v1 == v2)
+                Console.WriteLine("Os Valores săo iguais.");
+            else
+                if (v1 > v2)
+                Console.WriteLine("O Primeiro Valor é maior.");
+            else
+                Console.WriteLine("O Segundo Valor é maior.");
+        }
+    }
+    
+}
+
+ex 3
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exe3Lista2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int a;
+            int b;
+            int c;
+
+            Console.Write("Digite o 1ş numero: ");
+            a = int.Parse(Console.ReadLine());
+            Console.Write("Digite o 2ş numero: ");
+            b = int.Parse(Console.ReadLine());
+            Console.Write("Digite o 3ş numero: ");
+            c = int.Parse(Console.ReadLine());
+
+            if (a == b)
+                if (a == c)
+                    Console.WriteLine("Os tręs valoes săo iguais");
+                else
+                    if (a > c)
+                    Console.WriteLine("O primeiro e o segundo valor săo maiores");
+                else
+                    Console.WriteLine("O terceiro valor é maior");
+
+               else
+                if (a == c)
+                if (a > b)
+                    Console.WriteLine("O primeiro e o terceiro valor săo maiores");
+                else
+                    Console.WriteLine("O segundo valor é maior");
+            else
+                if (b == c)
+                if (b > a)
+                    Console.WriteLine("O segundo e o terceiro valor săo maiores");
+                else
+                    Console.WriteLine("O primeiro valor é maior");
+               else
+                 if (a > b)
+                if (a > c)
+                    Console.WriteLine("O primeiro valor é maior");
+                else
+                    Console.WriteLine("O terceiro valor é maior");
+            else
+                if (b > c)
+                Console.WriteLine("O segundo valor maior");
+            else
+                Console.WriteLine("O terceiro valor é maior");
+        }
+    }
+    
+}
+
+ex 4
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exe4Lista2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double a;
+            double b;
+            double h;
+
+            Console.WriteLine("Digite o valor da Base. ");
+            b = Double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o valor da Altura. ");
+            h = Double.Parse(Console.ReadLine());
+
+            a = b * h;
+
+            Console.WriteLine("O Seu terreno tęm {0} metros", a);
+
+            if (a > 100)           
+                Console.WriteLine("Terreno Grande.");
+            
+            
+        }
+    }
+}
+
+ex 5 
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exe5Lista2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double a;
+            double b;
+            double h;
+
+            Console.WriteLine("Digite o valor da Base. ");
+            b = Double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o valor da Altura. ");
+            h = Double.Parse(Console.ReadLine());
+
+            a = b * h;
+
+            Console.WriteLine("O Seu terreno tęm {0} metros", a);
+
+            if (a > 100)
+                Console.WriteLine("Terreno Grande.");
+            else
+                Console.WriteLine("Terreno Pequeno.");
+        }
+    }
+}
+
+ex 6
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exe6Lista2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double a;
+            double p;
+            double r;
+            double c;
+            
+            Console.WriteLine("Digite o Valor de sua Altura.");
+            a = Double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o Valor do seu Peso.");
+            p = Double.Parse(Console.ReadLine());
+
+            c = a * a;
+            r = p / c;
+
+            if (r < 20)
+                Console.WriteLine("Abaixo do Peso");
+            else 
+             if (r >= 25)
+                Console.WriteLine("Acima do Peso.");
+            else 
+             if (r < 25)
+                Console.WriteLine("Peso Ideal.");
+        }
+
+    }
+}
+
+ex 7
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exe7Lista2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int a;
+            int b;
+            int c;
+
+            Console.Write("Digite o primeiro valor: ");
+            a = int.Parse(Console.ReadLine());
+            Console.Write("Digite o segundo valor: ");
+            b = int.Parse(Console.ReadLine());
+            Console.Write("Digite o segundo valor: ");
+            c = int.Parse(Console.ReadLine());
+
+            if (a + b > c && a + c > b && b + c > a)
+                if (a == b && a == c)
+                    Console.WriteLine("Triângulo Equilátero");
+                else
+                if (a == b || a == c || b == c)
+                    Console.WriteLine("Triângulo Isósceles");
+                else
+                    Console.WriteLine("Triângulo Escaleno");
+            else
+                Console.WriteLine("Năo Formam Triângulo");
+        }
+    }
+}
+
+ex 8
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exe8Lista2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int a;
+            int b;
+            int c;
+           
+            Console.Write("Digite o primeiro valor: ");
+            a = int.Parse(Console.ReadLine());
+            Console.Write("Digite o segundo valor: ");
+            b = int.Parse(Console.ReadLine());
+            Console.Write("Digite o terceiro valor: ");
+            c = int.Parse(Console.ReadLine());
+
+            if (((b * b) + (c * c)) == (a * a))
+                Console.WriteLine("Ele é um Triângulo Retângulo");
+            else
+                Console.WriteLine("Ele năo é um Triângulo Retângulo");
+                
+
+        }
+    }
+}
+
+ex 9
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exe9Lista2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double altura;
+            double peso;
+            string sexo;
+            double R;
+            
+            Console.Write("Informe o sexo M ou F: ");
+            sexo = Console.ReadLine();
+
+            Console.Write("Digite o Valor de sua Altura: ");
+            altura = Double.Parse(Console.ReadLine());
+
+            Console.Write("Digite o Valor do seu Peso: ");
+            peso = Double.Parse(Console.ReadLine());
+            
+            R = peso / (altura * altura);
+
+            if (sexo == "M")
+                if (R < 20)
+                    Console.WriteLine("Vocę está abaixo do peso");
+                else
+                if (R >= 25)
+                    Console.WriteLine("Vocę está acima do peso.");
+                else
+                    Console.WriteLine("Vocę está no peso ideal.");
+            else
+            if (R < 19)
+                Console.WriteLine("Vocę está abaixo do peso.");
+            else
+            if (R >= 24)
+                Console.WriteLine("Vocę está acima do peso,");
+            else
+                Console.WriteLine("Vocę está no peso ideal.");
+
+
+
+
+
+
+    }   }
+}
+
+ex 10
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exe10Lista2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double P1;
+            double P2;
+            double R;
+
+               Console.Write("Digite o Valor da P1: ");
+               P1 = Double.Parse(Console.ReadLine());
+               Console.Write("Digite o Valor da P1: ");
+               P2 = Double.Parse(Console.ReadLine());
+
+            R = ((P1 + P2) / 3);
+
+            if (R >= 5)
+                Console.WriteLine("Aprovado");
+            else            
+                Console.WriteLine("Reprovado");
+                
+
+
+        }
+    }
+}
+
+ex 11
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exe11Lista2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double P1;          
+            double R;
+
+            Console.Write("Digite o Valor da P1: ");
+            P1 = Double.Parse(Console.ReadLine());
+            
+            R = ((5 * 3) - P1);
+           
+            Console.WriteLine("Nota necessária para P2 é {0}", R);
+          
+        }
+    }
+}
